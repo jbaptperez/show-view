@@ -11,6 +11,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <time.h>
+#include <string.h>
 
 
 #define		KEY001 (68150631)   /* initial scramble (key not used) */
@@ -420,7 +421,7 @@ timestr (int t) {
 	exit (-1);
     }
     if (hour == 24 && min > 0) {
-	fprintf (stderr, "timestr: I'm confused, time %d is beyond 24 hours range!\n", t, min);
+	fprintf (stderr, "timestr: I'm confused, time %d is beyond 24 hours range!\n", t);
 	exit (-1);
     }
 
@@ -1072,7 +1073,8 @@ decode_main (int month_today, int day_today, int year_today, int newspaper,
 		int *starttime_ret, int *duration_ret)
 {
     int	    s1_out, bot3, top5, quo, rem;
-    int	    mtout, tval, dval, cval;
+    int	    mtout;
+    unsigned int tval, dval, cval;
     int	    day_out, channel_out;
     int	    starttime_out, duration_out;
     int     modnews;
@@ -1130,7 +1132,6 @@ encode_main (int month,
 	     int starttimem,
 	     int durationm)
 {
-    int	    j = 0;
     int	    s1_out = 0;
     int     bot3 = 0;
     int     top5 = 0;
@@ -1154,7 +1155,6 @@ encode_main (int month,
     interleave (tval, cval, &big_top5, &big_rem);
 
     top5 = 0;
-    j = 0;
 
     top5 = inv_map_top(year, month, day, big_top5);
     if (top5 < 0) {
@@ -1332,7 +1332,7 @@ main (argc, argv)
 int	argc;
 char	*argv[];
 {
-    char    ch;
+    int    ch;
     int	    rem;
     int	    day_out, channel_out;
     int	    starttime_out, duration_out;
