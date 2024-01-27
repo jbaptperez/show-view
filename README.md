@@ -64,14 +64,19 @@ done | grep 3120361
 
 ## Resources
 
+Below is a French TV guide extract:
+![French TV guide - 25 January 1996](jda_250196.jpg)
+
 * [Wikipedia](https://en.wikipedia.org/wiki/Video_recorder_scheduling_code#cite_note-1)
 * [1-8 digit source code directory](https://www.cs.cmu.edu/~dst/VCRPlus+/)
 * [1-6 digit paper](http://files.righto.com/papers/vcr.ps)
 * [1-6 digit paper - figure 1](http://files.righto.com/papers/vcr.fig1.ps)
 * [1-6 digit paper - figure 2](http://files.righto.com/papers/vcr.fig2.ps)
+* [French TV guide - 25 January 1996](https://horrorcamp149013109.files.wordpress.com/2018/10/jda_250196.jpg)
 
 Local links:
 
 * [1-6 digit paper](vcr.ps)
 * [1-6 digit paper - figure 1](vcr.fig1.ps)
 * [1-6 digit paper - figure 2](vcr.fig2.ps)
+* [French TV guide - 25 January 1996](jda_250196.jpg)
